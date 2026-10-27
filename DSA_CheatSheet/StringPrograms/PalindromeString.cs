@@ -10,8 +10,9 @@ namespace DSA_CheatSheet.StringPrograms
     {
         public static bool IsStringPalindrome(string str)
         {
+            str = str.ToLower();
             int left = 0, right = str.Length - 1;
-            while (left < right)
+            while (left <= right)
             {
                 if (str[left] != str[right])
                 {
