@@ -10,7 +10,8 @@ namespace DSA_CheatSheet.StringPrograms
     {
         public static int CountCharacter(string input, char ch)
         {
-            input = input.ToLower();
+            input = input.ToLowerInvariant();
+            ch = char.ToLowerInvariant(ch);
             int count = 0;
             foreach (char c in input)
             {

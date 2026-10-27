@@ -10,7 +10,7 @@ namespace DSA_CheatSheet.StringPrograms
     {
         public static int CountVowels(string input)
         {
-            input = input.ToLower();
+            input = input.ToLowerInvariant();
             int count = 0;
             string vowels = "aeiou";
 
