@@ -21,5 +21,9 @@ public class Program
         int target = 70;
         int index = BinarySearch.Search(arr, target);
         Console.WriteLine("Binary Search: Target {0} found at index {1}", target, index);
+
+        Console.WriteLine("Largest Element in Array: " + LargestElementInArray.GetLargestElement(arr));
+        Console.WriteLine("Second Largest Element in Array: " + SecondLargestInArray.GetSecondLargestElement(arr));
+        Console.WriteLine("Third Largest Element in Array: " + ThirdLargestInArray.GetThirdLargestElement(arr));
     }
 }
