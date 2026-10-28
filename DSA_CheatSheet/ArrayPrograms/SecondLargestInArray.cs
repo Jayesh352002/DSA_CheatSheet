@@ -10,22 +10,22 @@ namespace DSA_CheatSheet.ArrayPrograms
     {
         public static int GetSecondLargestElement(int[] arr)
         {
-            int max = int.MinValue, secondMax = int.MinValue;
+            int? max = null, secondMax = null;
 
             for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] > max)
+                if (!max.HasValue || arr[i] > max.Value)
                 {
                     secondMax = max;
                     max = arr[i];
                 }
-                else if ((arr[i] > secondMax) && (arr[i] != max))
+                else if (arr[i] != max.Value && (!secondMax.HasValue || arr[i] > secondMax.Value))
                 {
                     secondMax = arr[i];
                 }
             }
 
-            return secondMax;
+            return secondMax ?? throw new InvalidOperationException("The array must contain at least two distinct values.");
         }
     }
 }
