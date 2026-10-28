@@ -1,4 +1,5 @@
-﻿using DSA_CheatSheet.StringPrograms;
+﻿using DSA_CheatSheet.ArrayPrograms;
+using DSA_CheatSheet.StringPrograms;
 
 public class Program
 {
@@ -15,5 +16,10 @@ public class Program
 
         int charCount = CountChar.CountCharacter("Hello World", 'l');
         Console.WriteLine($"Number of occurrences of 'l' in 'Hello World': {charCount}");
+
+        int[] arr = new int[] {10,20,30,40,50,60,70,80,90,100};
+        int target = 70;
+        int index = BinarySearch.Search(arr, target);
+        Console.WriteLine("Binary Search: Target {0} found at index {1}", target, index);
     }
 }
