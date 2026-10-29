@@ -25,5 +25,9 @@ public class Program
         Console.WriteLine("Largest Element in Array: " + LargestElementInArray.GetLargestElement(arr));
         Console.WriteLine("Second Largest Element in Array: " + SecondLargestInArray.GetSecondLargestElement(arr));
         Console.WriteLine("Third Largest Element in Array: " + ThirdLargestInArray.GetThirdLargestElement(arr));
+
+        Console.WriteLine("Smallest Element in Array: " + SmallestElementInArray.GetSmallestElement(arr));
+        Console.WriteLine("Second Smallest Element in Array: " + SecondSmallestInArray.GetSecondSmallestElement(arr));
+        Console.WriteLine("Third Smallest Element in Array: " + ThirdSmallestInArray.GetThirdSmallestElement(arr));
     }
 }
