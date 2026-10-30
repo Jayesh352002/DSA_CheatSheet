@@ -38,11 +38,43 @@ public class Program
             Console.Write(item + ", ");
         }
 
+        Console.WriteLine();
+
         var res1 = MergeArray.GetMergeSortedArray(arr, arr2);
         Console.WriteLine("Sorted Merge Array: ");
         foreach(var item in res1)
         {
             Console.Write(item + ", ");
         }
+
+        Console.WriteLine();
+
+        var res2 = ReverseArray.GetReverseArray(arr2);
+        Console.WriteLine("Reverse Array: ");
+        foreach(var item in res2)
+        {
+            Console.Write(item+ " ");
+        }
+
+        Console.WriteLine();
+
+        int[] arr3 = new int[] { 10, 0, 2, 5, 0, 6 };
+        var res3 = ZerosToEnd.MoveZerosToEnd(arr3);
+
+        Console.WriteLine("Move Zeros To End: ");
+        foreach (var item in res3)
+        {
+            Console.Write(item + " ");
+        }
+
+        Console.WriteLine();
+
+        var uniqueArray = RemoveDuplicatesFromArray.GetUniqueArray(new int[] { 5, 10, 5, 1, 8, 10, 15, 20 });
+        foreach (var item in uniqueArray)
+        {
+            Console.Write(item + " ");
+        }
+
+        Console.WriteLine();
     }
 }
