@@ -76,5 +76,9 @@ public class Program
         }
 
         Console.WriteLine();
+
+        Console.WriteLine("Remove Space from String: " + RemoveSpaceFromString.GetNoSpaceString("Jayesh Rajendra Bafna"));
+        Console.WriteLine("Remove Duplicates From String: " + RemoveDuplicateFromString.GetUniqueString("AakashPatel"));
+        Console.WriteLine("Remove Vowels From String: " + RemoveVowelsFromString.GetNoVowelsString("Jayeshob"));
     }
 }
