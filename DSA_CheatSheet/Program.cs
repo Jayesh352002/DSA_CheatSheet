@@ -82,5 +82,7 @@ public class Program
         Console.WriteLine("Remove Vowels From String: " + RemoveVowelsFromString.GetNoVowelsString("Jayeshob"));
         Console.WriteLine("Remove Character From String: " + RemoveCharacter.GetNewStringAfterRemoval("Jayesh", 's'));
         Console.WriteLine("Longest Word in String: " + LongestSubString.GetLongestSubString("Jayesh Rajendra Bafna"));
+        Console.WriteLine("Reverse Word in String: " + ReverseWord.GetStringAfterReverseWord("Jayesh Rajendra Bafna"));
+        Console.WriteLine("First Non-Repeating Character in String: " + FirstNotRepeatChar.GetFirstNonRepeatChar("Jajesahob"));
     }
 }
