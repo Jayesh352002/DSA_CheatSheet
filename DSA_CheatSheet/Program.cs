@@ -80,5 +80,7 @@ public class Program
         Console.WriteLine("Remove Space from String: " + RemoveSpaceFromString.GetNoSpaceString("Jayesh Rajendra Bafna"));
         Console.WriteLine("Remove Duplicates From String: " + RemoveDuplicateFromString.GetUniqueString("AakashPatel"));
         Console.WriteLine("Remove Vowels From String: " + RemoveVowelsFromString.GetNoVowelsString("Jayeshob"));
+        Console.WriteLine("Remove Character From String: " + RemoveCharacter.GetNewStringAfterRemoval("Jayesh", 's'));
+        Console.WriteLine("Longest Word in String: " + LongestSubString.GetLongestSubString("Jayesh Rajendra Bafna"));
     }
 }
