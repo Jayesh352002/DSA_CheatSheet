@@ -84,5 +84,14 @@ public class Program
         Console.WriteLine("Longest Word in String: " + LongestSubString.GetLongestSubString("Jayesh Rajendra Bafna"));
         Console.WriteLine("Reverse Word in String: " + ReverseWord.GetStringAfterReverseWord("Jayesh Rajendra Bafna"));
         Console.WriteLine("First Non-Repeating Character in String: " + FirstNotRepeatChar.GetFirstNonRepeatChar("Jajesahob"));
+
+        Console.WriteLine("Maximum Sub Array Sum: " + MaximumSubArray.GetMaxSubArray(new int[] { -2,1,-3,4,-1,2,1,-5,4 }));
+        var res4 = PlusOne.GetNewPlusOneArray(new int[] {3,9,9});
+        Console.WriteLine("Plus One Array: ");
+        foreach (var item in res4)
+        {
+            Console.Write(item + " ");
+        }
+        Console.WriteLine();
     }
 }
