@@ -93,5 +93,13 @@ public class Program
             Console.Write(item + " ");
         }
         Console.WriteLine();
+
+        var res5 = BubbleSort.GetSortedArray(new int[] { 64, 34, 25, 12, 22, 11, 90 });
+        Console.WriteLine("Bubble Sorted Array: ");
+        foreach (var item in res5)
+        {
+            Console.Write(item + " ");
+        }
+        Console.WriteLine();
     }
 }
