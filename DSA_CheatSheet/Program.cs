@@ -101,5 +101,13 @@ public class Program
             Console.Write(item + " ");
         }
         Console.WriteLine();
+
+        var res6 = SelectionSort.GetSortedArray(new int[] { 64, 25, 12, 22, 11 });
+        Console.WriteLine("Selection Sorted Array: ");
+        foreach (var item in res6)
+        {
+            Console.Write(item + " ");
+        }
+        Console.WriteLine();
     }
 }
