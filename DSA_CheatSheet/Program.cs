@@ -109,5 +109,13 @@ public class Program
             Console.Write(item + " ");
         }
         Console.WriteLine();
+
+        var res7 = InsertionSort.GetSortedArray(new int[] { 12, 11, 13, 5, 6 });
+        Console.WriteLine("Insertion Sorted Array: ");
+        foreach (var item in res7)
+        {
+            Console.Write(item + " ");
+        }
+        Console.WriteLine();
     }
 }
